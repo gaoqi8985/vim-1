@@ -14,286 +14,286 @@ set cpo&vim
 scriptencoding cp936
 
 " Help menu
-menutrans &Help		°ïÖú(&H)
+menutrans &Help		å¸®åŠ©(&H)
 " Help menuitems and dialog {{{1
-menutrans &Overview<Tab><F1>	¸ÅÊö(&O)<Tab><F1>
-menutrans &User\ Manual			ÓÃ»§ÊÖ²á(&U)
-menutrans &How-to\ Links		ÈçºÎÊ¹ÓÃ(&H)
-menutrans &Find\.\.\.			²éÕÒ(&F)\.\.\.
-menutrans &Credits				ÖÂĞ»(&C)
-menutrans Co&pying				°æÈ¨(&P)
-menutrans &Sponsor/Register		ÔŞÖú/×¢²á(&S)
-menutrans O&rphans				Õü¾È¹Â¶ù(&R)
-menutrans &Version				°æ±¾(&V)
-menutrans &About				¹ØÓÚ(&A)
+menutrans &Overview<Tab><F1>	æ¦‚è¿°(&O)<Tab><F1>
+menutrans &User\ Manual			ç”¨æˆ·æ‰‹å†Œ(&U)
+menutrans &How-to\ Links		å¦‚ä½•ä½¿ç”¨(&H)
+menutrans &Find\.\.\.			æŸ¥æ‰¾(&F)\.\.\.
+menutrans &Credits				è‡´è°¢(&C)
+menutrans Co&pying				ç‰ˆæƒ(&P)
+menutrans &Sponsor/Register		èµåŠ©/æ³¨å†Œ(&S)
+menutrans O&rphans				æ‹¯æ•‘å­¤å„¿(&R)
+menutrans &Version				ç‰ˆæœ¬(&V)
+menutrans &About				å…³äº(&A)
 
 " fun! s:Helpfind()
 if !exists("g:menutrans_help_dialog")
-  let g:menutrans_help_dialog = "ÊäÈëÃüÁî»òµ¥´ÊÒÔ»ñµÃ°ïÖú:\n\nÇ°×º i_ ±íÊ¾ÊäÈëÄ£Ê½ÏÂµÄÃüÁî(Èç: i_CTRL-X)\nÇ°×º c_ ±íÊ¾ÃüÁîĞĞÏÂµÄ±à¼­ÃüÁî(Èç: c_<Del>)\nÇ°×º ' ±íÊ¾Ñ¡ÏîÃû(Èç: 'shiftwidth')"
+  let g:menutrans_help_dialog = "è¾“å…¥å‘½ä»¤æˆ–å•è¯ä»¥è·å¾—å¸®åŠ©:\n\nå‰ç¼€ i_ è¡¨ç¤ºè¾“å…¥æ¨¡å¼ä¸‹çš„å‘½ä»¤(å¦‚: i_CTRL-X)\nå‰ç¼€ c_ è¡¨ç¤ºå‘½ä»¤è¡Œä¸‹çš„ç¼–è¾‘å‘½ä»¤(å¦‚: c_<Del>)\nå‰ç¼€ ' è¡¨ç¤ºé€‰é¡¹å(å¦‚: 'shiftwidth')"
 endif
 " }}}
 
 " File menu
-menutrans &File		ÎÄ¼ş(&F)
+menutrans &File		æ–‡ä»¶(&F)
 " File menuitems {{{1
-menutrans &Open\.\.\.<Tab>:e			´ò¿ª(&O)\.\.\.<Tab>:e
-menutrans Sp&lit-Open\.\.\.<Tab>:sp		ÔÚ²ğ·Ö´°¿Ú´ò¿ª(&L)\.\.\.<Tab>:sp
-menutrans Open\ Tab\.\.\.<Tab>:tabnew	ÔÚ±êÇ©Ò³´ò¿ª\.\.\.<Tab>:tabnew
-menutrans &New<Tab>:enew				ĞÂ½¨(&N)<Tab>:enew
-menutrans &Close<Tab>:close				¹Ø±Õ(&C)<Tab>:close
-menutrans &Save<Tab>:w					±£´æ(&S)<Tab>:w
-menutrans Save\ &As\.\.\.<Tab>:sav		Áí´æÎª(&A)\.\.\.<Tab>:sav
-menutrans Split\ &Diff\ With\.\.\.		²ğ·Ö´°¿ÚÒÔ¶Ô±È²îÒì(Diff)(&D)\.\.\.
-menutrans Split\ Patched\ &By\.\.\.		²ğ·Ö´°¿ÚÒÔ½øĞĞĞŞ²¹(Patch)(&B)\.\.\.
-menutrans &Print						´òÓ¡(&P)
-menutrans Sa&ve-Exit<Tab>:wqa			±£´æ²¢ÍË³ö(&V)<Tab>:wqa
-menutrans E&xit<Tab>:qa					ÍË³ö(&X)<Tab>:qa
+menutrans &Open\.\.\.<Tab>:e			æ‰“å¼€(&O)\.\.\.<Tab>:e
+menutrans Sp&lit-Open\.\.\.<Tab>:sp		åœ¨æ‹†åˆ†çª—å£æ‰“å¼€(&L)\.\.\.<Tab>:sp
+menutrans Open\ Tab\.\.\.<Tab>:tabnew	åœ¨æ ‡ç­¾é¡µæ‰“å¼€\.\.\.<Tab>:tabnew
+menutrans &New<Tab>:enew				æ–°å»º(&N)<Tab>:enew
+menutrans &Close<Tab>:close				å…³é—­(&C)<Tab>:close
+menutrans &Save<Tab>:w					ä¿å­˜(&S)<Tab>:w
+menutrans Save\ &As\.\.\.<Tab>:sav		å¦å­˜ä¸º(&A)\.\.\.<Tab>:sav
+menutrans Split\ &Diff\ With\.\.\.		æ‹†åˆ†çª—å£ä»¥å¯¹æ¯”å·®å¼‚(Diff)(&D)\.\.\.
+menutrans Split\ Patched\ &By\.\.\.		æ‹†åˆ†çª—å£ä»¥è¿›è¡Œä¿®è¡¥(Patch)(&B)\.\.\.
+menutrans &Print						æ‰“å°(&P)
+menutrans Sa&ve-Exit<Tab>:wqa			ä¿å­˜å¹¶é€€å‡º(&V)<Tab>:wqa
+menutrans E&xit<Tab>:qa					é€€å‡º(&X)<Tab>:qa
 " }}}
 
 " Edit menu
-menutrans &Edit		±à¼­(&E)
+menutrans &Edit		ç¼–è¾‘(&E)
 " Edit menuitems {{{1
-menutrans &Undo<Tab>u						³·Ïú(&U)<Tab>u
-menutrans &Redo<Tab>^R						»Ö¸´(&R)<Tab>^R
-menutrans Rep&eat<Tab>\.					ÖØ¸´(&E)<Tab>\.
-menutrans Cu&t<Tab>"+x						¼ôÇĞ(&T)<Tab>"+x
-menutrans &Copy<Tab>"+y						¸´ÖÆ(&C)<Tab>"+y
-menutrans &Paste<Tab>"+gP					Õ³Ìù(&P)<Tab>"+gP
-menutrans Put\ &Before<Tab>[p				Õ³Ìùµ½¹â±êÇ°(&B)<Tab>[p
-menutrans Put\ &After<Tab>]p				Õ³Ìùµ½¹â±êºó(&A)<Tab>]p
-menutrans &Delete<Tab>x						É¾³ı(&D)<Tab>x
-menutrans &Select\ All<Tab>ggVG				È«Ñ¡(&S)<Tab>ggVG
-menutrans &Find\.\.\.						²éÕÒ(&F)\.\.\.
-menutrans Find\ and\ Rep&lace\.\.\.			²éÕÒºÍÌæ»»(&L)\.\.\.
-menutrans &Find<Tab>/						²éÕÒ(&F)<Tab>/
-menutrans Find\ and\ Rep&lace<Tab>:%s		²éÕÒºÍÌæ»»(&L)<Tab>:%s
-menutrans Settings\ &Window					ÉèÖÃ´°¿Ú(&W)
-menutrans Startup\ &Settings				Æô¶¯ÉèÖÃ(&S)
+menutrans &Undo<Tab>u						æ’¤é”€(&U)<Tab>u
+menutrans &Redo<Tab>^R						æ¢å¤(&R)<Tab>^R
+menutrans Rep&eat<Tab>\.					é‡å¤(&E)<Tab>\.
+menutrans Cu&t<Tab>"+x						å‰ªåˆ‡(&T)<Tab>"+x
+menutrans &Copy<Tab>"+y						å¤åˆ¶(&C)<Tab>"+y
+menutrans &Paste<Tab>"+gP					ç²˜è´´(&P)<Tab>"+gP
+menutrans Put\ &Before<Tab>[p				ç²˜è´´åˆ°å…‰æ ‡å‰(&B)<Tab>[p
+menutrans Put\ &After<Tab>]p				ç²˜è´´åˆ°å…‰æ ‡å(&A)<Tab>]p
+menutrans &Delete<Tab>x						åˆ é™¤(&D)<Tab>x
+menutrans &Select\ All<Tab>ggVG				å…¨é€‰(&S)<Tab>ggVG
+menutrans &Find\.\.\.						æŸ¥æ‰¾(&F)\.\.\.
+menutrans Find\ and\ Rep&lace\.\.\.			æŸ¥æ‰¾å’Œæ›¿æ¢(&L)\.\.\.
+menutrans &Find<Tab>/						æŸ¥æ‰¾(&F)<Tab>/
+menutrans Find\ and\ Rep&lace<Tab>:%s		æŸ¥æ‰¾å’Œæ›¿æ¢(&L)<Tab>:%s
+menutrans Settings\ &Window					è®¾ç½®çª—å£(&W)
+menutrans Startup\ &Settings				å¯åŠ¨è®¾ç½®(&S)
 
 " Edit/Global Settings
-menutrans &Global\ Settings					È«¾ÖÉèÖÃ(&G)
+menutrans &Global\ Settings					å…¨å±€è®¾ç½®(&G)
 " Edit.Global Settings menuitems and dialogs {{{2
-menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		¿ª/¹Ø¸ßÁÁ²éÕÒÄÚÈİ(&H)<Tab>:set\ hls!
-menutrans Toggle\ &Ignoring\ Case<Tab>:set\ ic!				¿ª/¹ØºöÂÔ´óĞ¡Ğ´(&I)<Tab>:set\ ic!
-menutrans Toggle\ &Showing\ Matched\ Pairs<Tab>:set\ sm!	¿ª/¹ØÏÔÊ¾À¨ºÅÆ¥Åä(&S)<Tab>:set\ sm!
-menutrans &Context\ Lines									ÉÏÏÂÎÄĞĞÊı(&C)
-menutrans &Virtual\ Edit									ĞéÄâ±à¼­(&V)
+menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		å¼€/å…³é«˜äº®æŸ¥æ‰¾å†…å®¹(&H)<Tab>:set\ hls!
+menutrans Toggle\ &Ignoring\ Case<Tab>:set\ ic!				å¼€/å…³å¿½ç•¥å¤§å°å†™(&I)<Tab>:set\ ic!
+menutrans Toggle\ &Showing\ Matched\ Pairs<Tab>:set\ sm!	å¼€/å…³æ˜¾ç¤ºæ‹¬å·åŒ¹é…(&S)<Tab>:set\ sm!
+menutrans &Context\ Lines									ä¸Šä¸‹æ–‡è¡Œæ•°(&C)
+menutrans &Virtual\ Edit									è™šæ‹Ÿç¼–è¾‘(&V)
 " Edit.Global Settings.Virtual Edit menuitems {{{3
-menutrans Never					´Ó²»
-menutrans Block\ Selection		Ö»ÔÚÑ¡¶¨¾ØĞÎ¿éÊ±
-menutrans Insert\ Mode			Ö»ÔÚ²åÈëÄ£Ê½Ê±
-menutrans Block\ and\ Insert	ÔÚÑ¡¶¨¾ØĞÎ¿éºÍ²åÈëÄ£Ê½Ê±
-menutrans Always				Ê¼ÖÕ
+menutrans Never					ä»ä¸
+menutrans Block\ Selection		åªåœ¨é€‰å®šçŸ©å½¢å—æ—¶
+menutrans Insert\ Mode			åªåœ¨æ’å…¥æ¨¡å¼æ—¶
+menutrans Block\ and\ Insert	åœ¨é€‰å®šçŸ©å½¢å—å’Œæ’å…¥æ¨¡å¼æ—¶
+menutrans Always				å§‹ç»ˆ
 " }}}
-menutrans Toggle\ Insert\ &Mode<Tab>:set\ im!				¿ª/¹Ø²åÈëÄ£Ê½(&M)<Tab>:set\ im!
-menutrans Toggle\ Vi\ C&ompatibility<Tab>:set\ cp!			¿ª/¹Ø\ Vi\ ¼æÈİĞÔ(&O)<Tab>:set\ cp!
-menutrans Search\ &Path\.\.\.								ËÑË÷Â·¾¶(&P)\.\.\.
-menutrans Ta&g\ Files\.\.\.									±ê¼ÇÎÄ¼ş(Tags)(&G)\.\.\.
+menutrans Toggle\ Insert\ &Mode<Tab>:set\ im!				å¼€/å…³æ’å…¥æ¨¡å¼(&M)<Tab>:set\ im!
+menutrans Toggle\ Vi\ C&ompatibility<Tab>:set\ cp!			å¼€/å…³\ Vi\ å…¼å®¹æ€§(&O)<Tab>:set\ cp!
+menutrans Search\ &Path\.\.\.								æœç´¢è·¯å¾„(&P)\.\.\.
+menutrans Ta&g\ Files\.\.\.									æ ‡è®°æ–‡ä»¶(Tags)(&G)\.\.\.
 
 " GUI options
-menutrans Toggle\ &Toolbar									¿ª/¹Ø¹¤¾ßÀ¸(&T)
-menutrans Toggle\ &Bottom\ Scrollbar						¿ª/¹Øµ×²¿¹ö¶¯Ìõ(&B)
-menutrans Toggle\ &Left\ Scrollbar							¿ª/¹Ø×ó²à¹ö¶¯Ìõ(&L)
-menutrans Toggle\ &Right\ Scrollbar							¿ª/¹ØÓÒ²à¹ö¶¯Ìõ(&R)
+menutrans Toggle\ &Toolbar									å¼€/å…³å·¥å…·æ (&T)
+menutrans Toggle\ &Bottom\ Scrollbar						å¼€/å…³åº•éƒ¨æ»šåŠ¨æ¡(&B)
+menutrans Toggle\ &Left\ Scrollbar							å¼€/å…³å·¦ä¾§æ»šåŠ¨æ¡(&L)
+menutrans Toggle\ &Right\ Scrollbar							å¼€/å…³å³ä¾§æ»šåŠ¨æ¡(&R)
 
 " fun! s:SearchP()
 if !exists("g:menutrans_path_dialog")
-  let g:menutrans_path_dialog = "ÊäÈëËÑË÷Â·¾¶¡£\nÓÃ¶ººÅ·Ö¸ôÄ¿Â¼Ãû¡£"
+  let g:menutrans_path_dialog = "è¾“å…¥æœç´¢è·¯å¾„ã€‚\nç”¨é€—å·åˆ†éš”ç›®å½•åã€‚"
 endif
 
 " fun! s:TagFiles()
 if !exists("g:menutrans_tags_dialog")
-  let g:menutrans_tags_dialog = "ÊäÈë±ê¼ÇÎÄ¼ş(Tags)Ãû³Æ¡£\nÓÃ¶ººÅ·Ö¸ôÎÄ¼şÃû¡£"
+  let g:menutrans_tags_dialog = "è¾“å…¥æ ‡è®°æ–‡ä»¶(Tags)åç§°ã€‚\nç”¨é€—å·åˆ†éš”æ–‡ä»¶åã€‚"
 endif
 " }}}
 
 " Edit/File Settings
-menutrans F&ile\ Settings					ÎÄ¼şÉèÖÃ(&I)
+menutrans F&ile\ Settings					æ–‡ä»¶è®¾ç½®(&I)
 " Edit.File Settings menuitems and dialogs {{{2
 " Boolean options
-menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!			¿ª/¹ØĞĞºÅ(&N)<Tab>:set\ nu!
-menutrans Toggle\ Relati&ve\ Line\ Numbering<Tab>:set\ rnu!	¿ª/¹ØÏà¶ÔĞĞºÅ(&V)<Tab>:set\ rnu!
-menutrans Toggle\ &List\ Mode<Tab>:set\ list!				¿ª/¹ØÁĞ±íÄ£Ê½(&L)<Tab>:set\ list!
-menutrans Toggle\ Line\ &Wrapping<Tab>:set\ wrap!			¿ª/¹Ø»»ĞĞ(&W)<Tab>:set\ wrap!
-menutrans Toggle\ W&rapping\ at\ Word<Tab>:set\ lbr!		¿ª/¹Ø´ÊÎ²»»ĞĞ(&R)<Tab>:set\ lbr!
-menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!				¿ª/¹ØÖÆ±í·ûÀ©Õ¹(&E)<Tab>:set\ et!
-menutrans Toggle\ &Auto\ Indenting<Tab>:set\ ai!			¿ª/¹Ø×Ô¶¯Ëõ½ø(&A)<Tab>:set\ ai!
-menutrans Toggle\ &C-Style\ Indenting<Tab>:set\ cin!		¿ª/¹Ø\ C\ ÓïÑÔÊ½Ëõ½ø(&C)<Tab>:set\ cin!
+menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!			å¼€/å…³è¡Œå·(&N)<Tab>:set\ nu!
+menutrans Toggle\ Relati&ve\ Line\ Numbering<Tab>:set\ rnu!	å¼€/å…³ç›¸å¯¹è¡Œå·(&V)<Tab>:set\ rnu!
+menutrans Toggle\ &List\ Mode<Tab>:set\ list!				å¼€/å…³åˆ—è¡¨æ¨¡å¼(&L)<Tab>:set\ list!
+menutrans Toggle\ Line\ &Wrapping<Tab>:set\ wrap!			å¼€/å…³æ¢è¡Œ(&W)<Tab>:set\ wrap!
+menutrans Toggle\ W&rapping\ at\ Word<Tab>:set\ lbr!		å¼€/å…³è¯å°¾æ¢è¡Œ(&R)<Tab>:set\ lbr!
+menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!				å¼€/å…³åˆ¶è¡¨ç¬¦æ‰©å±•(&E)<Tab>:set\ et!
+menutrans Toggle\ &Auto\ Indenting<Tab>:set\ ai!			å¼€/å…³è‡ªåŠ¨ç¼©è¿›(&A)<Tab>:set\ ai!
+menutrans Toggle\ &C-Style\ Indenting<Tab>:set\ cin!		å¼€/å…³\ C\ è¯­è¨€å¼ç¼©è¿›(&C)<Tab>:set\ cin!
 
 " other options
-menutrans &Shiftwidth										Ëõ½ø¿í¶È(&S)
-menutrans Soft\ &Tabstop									ÈíÖÆ±íÎ»¿í¶È(Soft Tabstop)(&T)
-menutrans Te&xt\ Width\.\.\.								ÎÄ±¾¿í¶È(&X)\.\.\.
-menutrans &File\ Format\.\.\.								ÎÄ¼ş¸ñÊ½(&F)\.\.\.
+menutrans &Shiftwidth										ç¼©è¿›å®½åº¦(&S)
+menutrans Soft\ &Tabstop									è½¯åˆ¶è¡¨ä½å®½åº¦(Soft\ Tabstop)(&T)
+menutrans Te&xt\ Width\.\.\.								æ–‡æœ¬å®½åº¦(&X)\.\.\.
+menutrans &File\ Format\.\.\.								æ–‡ä»¶æ ¼å¼(&F)\.\.\.
 
 " fun! s:TextWidth()
 if !exists("g:menutrans_textwidth_dialog")
-  let g:menutrans_textwidth_dialog = "ÊäÈëÎÄ±¾¿í¶È(Ã¿ĞĞ×î´ó×Ö·ûÊı£¬0 ±íÊ¾½ûÓÃ):"
+  let g:menutrans_textwidth_dialog = "è¾“å…¥æ–‡æœ¬å®½åº¦(æ¯è¡Œæœ€å¤§å­—ç¬¦æ•°ï¼Œ0 è¡¨ç¤ºç¦ç”¨):"
 endif
 
 " fun! s:FileFormat()
 if !exists("g:menutrans_fileformat_dialog")
-  let g:menutrans_fileformat_dialog = "Ñ¡ÔñÎÄ¼şµÄ±£´æ¸ñÊ½:"
+  let g:menutrans_fileformat_dialog = "é€‰æ‹©æ–‡ä»¶çš„ä¿å­˜æ ¼å¼:"
 endif
 if !exists("g:menutrans_fileformat_choices")
-  let g:menutrans_fileformat_choices = "&Unix\n&Dos\n&Mac\nÈ¡Ïû(&C)"
+  let g:menutrans_fileformat_choices = "&Unix\n&Dos\n&Mac\nå–æ¶ˆ(&C)"
 endif
 " }}}
-menutrans Show\ C&olor\ Schemes\ in\ Menu	ÔÚ²Ëµ¥ÖĞÏÔÊ¾ÅäÉ«·½°¸(&O)
-menutrans C&olor\ Scheme					ÅäÉ«·½°¸(&O)
-menutrans Show\ &Keymaps\ in\ Menu			ÔÚ²Ëµ¥ÖĞÏÔÊ¾¼üÅÌÓ³Éä(&K)
-menutrans &Keymap							¼üÅÌÓ³Éä(&K)
-menutrans Select\ Fo&nt\.\.\.				Ñ¡Ôñ×ÖÌå(&N)\.\.\.
+menutrans Show\ C&olor\ Schemes\ in\ Menu	åœ¨èœå•ä¸­æ˜¾ç¤ºé…è‰²æ–¹æ¡ˆ(&O)
+menutrans C&olor\ Scheme					é…è‰²æ–¹æ¡ˆ(&O)
+menutrans Show\ &Keymaps\ in\ Menu			åœ¨èœå•ä¸­æ˜¾ç¤ºé”®ç›˜æ˜ å°„(&K)
+menutrans &Keymap							é”®ç›˜æ˜ å°„(&K)
+menutrans Select\ Fo&nt\.\.\.				é€‰æ‹©å­—ä½“(&N)\.\.\.
 " }}}
 
 " Programming menu
-menutrans &Tools	¹¤¾ß(&T)
+menutrans &Tools	å·¥å…·(&T)
 " Tools menuitems {{{1
-menutrans &Jump\ to\ This\ Tag<Tab>g^]			Ìø×ªµ½Õâ¸ö±ê¼Ç(Tag)(&J)<Tab>g^]
-menutrans Jump\ &Back<Tab>^T					Ìø×ª»Ø(&B)<Tab>^T
-menutrans Build\ &Tags\ File					Éú³É±ê¼ÇÎÄ¼ş(Tags)(&T)
+menutrans &Jump\ to\ This\ Tag<Tab>g^]			è·³è½¬åˆ°è¿™ä¸ªæ ‡è®°(Tag)(&J)<Tab>g^]
+menutrans Jump\ &Back<Tab>^T					è·³è½¬å›(&B)<Tab>^T
+menutrans Build\ &Tags\ File					ç”Ÿæˆæ ‡è®°æ–‡ä»¶(Tags)(&T)
 
 " Tools.Spelling Menu
-menutrans &Spelling								Æ´Ğ´¼ì²é(&S)
+menutrans &Spelling								æ‹¼å†™æ£€æŸ¥(&S)
 " Tools.Spelling menuitems and dialog {{{2
-menutrans &Spell\ Check\ On						´ò¿ªÆ´Ğ´¼ì²é(&S)
-menutrans Spell\ Check\ &Off					¹Ø±ÕÆ´Ğ´¼ì²é(&O)
-menutrans To\ &Next\ Error<Tab>]s				ÉÏÒ»¸ö´íÎó(&N)<Tab>]s
-menutrans To\ &Previous\ Error<Tab>[s			ÏÂÒ»¸ö´íÎó(&P)<Tab>[s
-menutrans Suggest\ &Corrections<Tab>z=			¸üÕı½¨Òé(&C)<Tab>z=
-menutrans &Repeat\ Correction<Tab>:spellrepall	¸üÕıÈ«²¿Í¬Àà´íÎó(&R)<Tab>:spellrepall
-menutrans Set\ Language\ to\ "en"				ÉèÖÃÓïÑÔÎª\ "en"
-menutrans Set\ Language\ to\ "en_au"			ÉèÖÃÓïÑÔÎª\ "en_au"
-menutrans Set\ Language\ to\ "en_ca"			ÉèÖÃÓïÑÔÎª\ "en_ca"
-menutrans Set\ Language\ to\ "en_gb"			ÉèÖÃÓïÑÔÎª\ "en_gb"
-menutrans Set\ Language\ to\ "en_nz"			ÉèÖÃÓïÑÔÎª\ "en_nz"
-menutrans Set\ Language\ to\ "en_us"			ÉèÖÃÓïÑÔÎª\ "en_us"
-menutrans &Find\ More\ Languages				²éÕÒ¸ü¶àÓïÑÔ(&F)
+menutrans &Spell\ Check\ On						æ‰“å¼€æ‹¼å†™æ£€æŸ¥(&S)
+menutrans Spell\ Check\ &Off					å…³é—­æ‹¼å†™æ£€æŸ¥(&O)
+menutrans To\ &Next\ Error<Tab>]s				ä¸Šä¸€ä¸ªé”™è¯¯(&N)<Tab>]s
+menutrans To\ &Previous\ Error<Tab>[s			ä¸‹ä¸€ä¸ªé”™è¯¯(&P)<Tab>[s
+menutrans Suggest\ &Corrections<Tab>z=			æ›´æ­£å»ºè®®(&C)<Tab>z=
+menutrans &Repeat\ Correction<Tab>:spellrepall	æ›´æ­£å…¨éƒ¨åŒç±»é”™è¯¯(&R)<Tab>:spellrepall
+menutrans Set\ Language\ to\ "en"				è®¾ç½®è¯­è¨€ä¸º\ "en"
+menutrans Set\ Language\ to\ "en_au"			è®¾ç½®è¯­è¨€ä¸º\ "en_au"
+menutrans Set\ Language\ to\ "en_ca"			è®¾ç½®è¯­è¨€ä¸º\ "en_ca"
+menutrans Set\ Language\ to\ "en_gb"			è®¾ç½®è¯­è¨€ä¸º\ "en_gb"
+menutrans Set\ Language\ to\ "en_nz"			è®¾ç½®è¯­è¨€ä¸º\ "en_nz"
+menutrans Set\ Language\ to\ "en_us"			è®¾ç½®è¯­è¨€ä¸º\ "en_us"
+menutrans &Find\ More\ Languages				æŸ¥æ‰¾æ›´å¤šè¯­è¨€(&F)
 
 " func! s:SpellLang()
 if !exists("g:menutrans_set_lang_to")
-  let g:menutrans_set_lang_to = "ÉèÖÃÓïÑÔÎª"
+  let g:menutrans_set_lang_to = "è®¾ç½®è¯­è¨€ä¸º"
 endif
 " }}}
 
 " Tools.Fold Menu
-menutrans &Folding								ÕÛµş(&F)
+menutrans &Folding								æŠ˜å (&F)
 " Tools.Fold menuitems {{{2
 " open close folds
-menutrans &Enable/Disable\ Folds<Tab>zi			ÆôÓÃ/½ûÓÃÕÛµş(&E)<Tab>zi
-menutrans &View\ Cursor\ Line<Tab>zv			Õ¹¿ª¹â±êËùÔÚĞĞ(&V)<Tab>zv
-menutrans Vie&w\ Cursor\ Line\ Only<Tab>zMzx	Ö»Õ¹¿ª¹â±êËùÔÚĞĞ(&W)<Tab>zMzx
-menutrans C&lose\ More\ Folds<Tab>zm			ÕÛµşÒ»¼¶(&L)<Tab>zm
-menutrans &Close\ All\ Folds<Tab>zM				ÕÛµşÈ«²¿(&C)<Tab>zM
-menutrans O&pen\ More\ Folds<Tab>zr				Õ¹¿ªÒ»¼¶(&P)<Tab>zr
-menutrans &Open\ All\ Folds<Tab>zR				Õ¹¿ªÈ«²¿(&O)<Tab>zR
+menutrans &Enable/Disable\ Folds<Tab>zi			å¯ç”¨/ç¦ç”¨æŠ˜å (&E)<Tab>zi
+menutrans &View\ Cursor\ Line<Tab>zv			å±•å¼€å…‰æ ‡æ‰€åœ¨è¡Œ(&V)<Tab>zv
+menutrans Vie&w\ Cursor\ Line\ Only<Tab>zMzx	åªå±•å¼€å…‰æ ‡æ‰€åœ¨è¡Œ(&W)<Tab>zMzx
+menutrans C&lose\ More\ Folds<Tab>zm			æŠ˜å ä¸€çº§(&L)<Tab>zm
+menutrans &Close\ All\ Folds<Tab>zM				æŠ˜å å…¨éƒ¨(&C)<Tab>zM
+menutrans O&pen\ More\ Folds<Tab>zr				å±•å¼€ä¸€çº§(&P)<Tab>zr
+menutrans &Open\ All\ Folds<Tab>zR				å±•å¼€å…¨éƒ¨(&O)<Tab>zR
 " fold method
-menutrans Fold\ Met&hod							ÕÛµş·½Ê½(&H)
+menutrans Fold\ Met&hod							æŠ˜å æ–¹å¼(&H)
 " Tools.Fold.Fold Method menuitems {{{3
-menutrans M&anual		ÊÖ¶¯(&A)
-menutrans I&ndent		Ëõ½ø(&N)
-menutrans E&xpression	±í´ïÊ½(&X)
-menutrans S&yntax		Óï·¨(&Y)
-menutrans &Diff			²îÒì(Diff)(&D)
-menutrans Ma&rker		¼ÇºÅ(Marker)(&R)
+menutrans M&anual		æ‰‹åŠ¨(&A)
+menutrans I&ndent		ç¼©è¿›(&N)
+menutrans E&xpression	è¡¨è¾¾å¼(&X)
+menutrans S&yntax		è¯­æ³•(&Y)
+menutrans &Diff			å·®å¼‚(Diff)(&D)
+menutrans Ma&rker		è®°å·(Marker)(&R)
 " }}}
 " create and delete folds
-menutrans Create\ &Fold<Tab>zf					´´½¨ÕÛµş(&F)<Tab>zf
-menutrans &Delete\ Fold<Tab>zd					É¾³ıÕÛµş(&D)<Tab>zd
-menutrans Delete\ &All\ Folds<Tab>zD			É¾³ıÈ«²¿ÕÛµş(&A)<Tab>zD
+menutrans Create\ &Fold<Tab>zf					åˆ›å»ºæŠ˜å (&F)<Tab>zf
+menutrans &Delete\ Fold<Tab>zd					åˆ é™¤æŠ˜å (&D)<Tab>zd
+menutrans Delete\ &All\ Folds<Tab>zD			åˆ é™¤å…¨éƒ¨æŠ˜å (&A)<Tab>zD
 " moving around in folds
-menutrans Fold\ Col&umn\ Width					ÕÛµş²Ù×÷À¸¿í¶È(&W)
+menutrans Fold\ Col&umn\ Width					æŠ˜å æ“ä½œæ å®½åº¦(&W)
 " }}}
 
 " Tools.Diff Menu
-menutrans &Diff									²îÒì(Diff)(&D)
+menutrans &Diff									å·®å¼‚(Diff)(&D)
 " Tools.Diff menuitems {{{2
-menutrans &Update		Ë¢ĞÂ(&U)
-menutrans &Get\ Block	²ÉÓÃ¶Ô²àÎÄ±¾¿é(&G)
-menutrans &Put\ Block	²ÉÓÃ±¾²àÎÄ±¾¿é(&P)
+menutrans &Update		åˆ·æ–°(&U)
+menutrans &Get\ Block	é‡‡ç”¨å¯¹ä¾§æ–‡æœ¬å—(&G)
+menutrans &Put\ Block	é‡‡ç”¨æœ¬ä¾§æ–‡æœ¬å—(&P)
 " }}}
 
-menutrans &Make<Tab>:make						Éú³É(Make)(&M)<Tab>:make
-menutrans &List\ Errors<Tab>:cl					ÁĞ³ö´íÎó(&L)<Tab>:cl
-menutrans L&ist\ Messages<Tab>:cl!				ÁĞ³öÏûÏ¢(&I)<Tab>:cl!
-menutrans &Next\ Error<Tab>:cn					ÏÂÒ»¸ö´íÎó(&N)<Tab>:cn
-menutrans &Previous\ Error<Tab>:cp				ÉÏÒ»¸ö´íÎó(&P)<Tab>:cp
-menutrans &Older\ List<Tab>:cold				½Ï¾ÉµÄ´íÎóÁĞ±í(&O)<Tab>:cold
-menutrans N&ewer\ List<Tab>:cnew				½ÏĞÂµÄ´íÎóÁĞ±í(&E)<Tab>:cnew
-menutrans Error\ &Window						´íÎó´°¿Ú(&W)
+menutrans &Make<Tab>:make						ç”Ÿæˆ(Make)(&M)<Tab>:make
+menutrans &List\ Errors<Tab>:cl					åˆ—å‡ºé”™è¯¯(&L)<Tab>:cl
+menutrans L&ist\ Messages<Tab>:cl!				åˆ—å‡ºæ¶ˆæ¯(&I)<Tab>:cl!
+menutrans &Next\ Error<Tab>:cn					ä¸‹ä¸€ä¸ªé”™è¯¯(&N)<Tab>:cn
+menutrans &Previous\ Error<Tab>:cp				ä¸Šä¸€ä¸ªé”™è¯¯(&P)<Tab>:cp
+menutrans &Older\ List<Tab>:cold				è¾ƒæ—§çš„é”™è¯¯åˆ—è¡¨(&O)<Tab>:cold
+menutrans N&ewer\ List<Tab>:cnew				è¾ƒæ–°çš„é”™è¯¯åˆ—è¡¨(&E)<Tab>:cnew
+menutrans Error\ &Window						é”™è¯¯çª—å£(&W)
 " Tools.Error Window menuitems {{{2
-menutrans &Update<Tab>:cwin		Ë¢ĞÂ(&U)<Tab>:cwin
-menutrans &Open<Tab>:copen		´ò¿ª(&O)<Tab>:copen
-menutrans &Close<Tab>:cclose	¹Ø±Õ(&C)<Tab>:cclose
+menutrans &Update<Tab>:cwin		åˆ·æ–°(&U)<Tab>:cwin
+menutrans &Open<Tab>:copen		æ‰“å¼€(&O)<Tab>:copen
+menutrans &Close<Tab>:cclose	å…³é—­(&C)<Tab>:cclose
 " }}}
-menutrans Show\ Compiler\ Se&ttings\ in\ Menu	ÔÚ²Ëµ¥ÖĞÏÔÊ¾±àÒëÆ÷ÉèÖÃ(&T)
-menutrans Se&t\ Compiler						ÉèÖÃ±àÒëÆ÷(&T)
-menutrans &Convert\ to\ HEX<Tab>:%!xxd			×ª»»³ÉÊ®Áù½øÖÆ(&C)<Tab>:%!xxd
-menutrans Conve&rt\ Back<Tab>:%!xxd\ -r			×ª»»»Ø(&R)<Tab>:%!xxd\ -r
+menutrans Show\ Compiler\ Se&ttings\ in\ Menu	åœ¨èœå•ä¸­æ˜¾ç¤ºç¼–è¯‘å™¨è®¾ç½®(&T)
+menutrans Se&t\ Compiler						è®¾ç½®ç¼–è¯‘å™¨(&T)
+menutrans &Convert\ to\ HEX<Tab>:%!xxd			è½¬æ¢æˆåå…­è¿›åˆ¶(&C)<Tab>:%!xxd
+menutrans Conve&rt\ Back<Tab>:%!xxd\ -r			è½¬æ¢å›(&R)<Tab>:%!xxd\ -r
 " }}}
 
 " Buffer menu
-menutrans &Buffers	»º³åÇø(&B)
+menutrans &Buffers	ç¼“å†²åŒº(&B)
 " Buffer menuitems and dialog {{{1
-menutrans &Refresh\ Menu	Ë¢ĞÂ±¾²Ëµ¥(&R)
-menutrans &Delete			É¾³ı(&D)
-menutrans &Alternate		ÇĞ»»(&A)
-menutrans &Next				ÏÂÒ»¸ö(&N)
-menutrans &Previous			ÉÏÒ»¸ö(&P)
+menutrans &Refresh\ Menu	åˆ·æ–°æœ¬èœå•(&R)
+menutrans &Delete			åˆ é™¤(&D)
+menutrans &Alternate		åˆ‡æ¢(&A)
+menutrans &Next				ä¸‹ä¸€ä¸ª(&N)
+menutrans &Previous			ä¸Šä¸€ä¸ª(&P)
 
 " func! s:BMMunge(fname, bnum) 
 if !exists("g:menutrans_no_file")
-  let g:menutrans_no_file = "[ÎŞÎÄ¼ş]"
+  let g:menutrans_no_file = "[æ— æ–‡ä»¶]"
 endif
 " }}}
 
 " Window menu
-menutrans &Window	´°¿Ú(&W)
+menutrans &Window	çª—å£(&W)
 " Window menuitems {{{1
-menutrans &New<Tab>^Wn					ĞÂ½¨(&N)<Tab>^Wn
-menutrans S&plit<Tab>^Ws				²ğ·Ö(&P)<Tab>^Ws
-menutrans Sp&lit\ To\ #<Tab>^W^^		²ğ·Ö²¢ÏÔÊ¾»º³åÇø\ #(&L)<Tab>^W^^
-menutrans Split\ &Vertically<Tab>^Wv	´¹Ö±²ğ·Ö(&V)<Tab>^Wv
-menutrans Split\ File\ E&xplorer		²ğ·Ö²¢´ò¿ªÎÄ¼şä¯ÀÀÆ÷(&X)
-menutrans &Close<Tab>^Wc				¹Ø±Õ(&C)<Tab>^Wc
-menutrans Close\ &Other(s)<Tab>^Wo		³ı´ËÖ®ÍâÈ«²¿¹Ø±Õ(&O)<Tab>^Wo
-menutrans Move\ &To						ÒÆ¶¯µ½(&T)
-menutrans &Top<Tab>^WK					¶¥¶Ë(&T)<Tab>^WK
-menutrans &Bottom<Tab>^WJ				µ×¶Ë(&B)<Tab>^WJ
-menutrans &Left\ Side<Tab>^WH			×ó±ß(&L)<Tab>^WH
-menutrans &Right\ Side<Tab>^WL			ÓÒ±ß(&R)<Tab>^WL
-menutrans Rotate\ &Up<Tab>^WR			ÏòÉÏÂÖ»»(&U)<Tab>^WR
-menutrans Rotate\ &Down<Tab>^Wr			ÏòÏÂÂÖ»»(&D)<Tab>^Wr
-menutrans &Equal\ Size<Tab>^W=			Æ½¾ù·Ö²¼(&E)<Tab>^W=
-menutrans &Max\ Height<Tab>^W_			×î´ó¸ß¶È(&M)<Tab>^W
-menutrans M&in\ Height<Tab>^W1_			×îĞ¡¸ß¶È(&I)<Tab>^W1_
-menutrans Max\ &Width<Tab>^W\|			×î´ó¿í¶È(&W)<Tab>^W\|
-menutrans Min\ Widt&h<Tab>^W1\|			×îĞ¡¿í¶È(&H)<Tab>^W1\|
+menutrans &New<Tab>^Wn					æ–°å»º(&N)<Tab>^Wn
+menutrans S&plit<Tab>^Ws				æ‹†åˆ†(&P)<Tab>^Ws
+menutrans Sp&lit\ To\ #<Tab>^W^^		æ‹†åˆ†å¹¶æ˜¾ç¤ºç¼“å†²åŒº\ #(&L)<Tab>^W^^
+menutrans Split\ &Vertically<Tab>^Wv	å‚ç›´æ‹†åˆ†(&V)<Tab>^Wv
+menutrans Split\ File\ E&xplorer		æ‹†åˆ†å¹¶æ‰“å¼€æ–‡ä»¶æµè§ˆå™¨(&X)
+menutrans &Close<Tab>^Wc				å…³é—­(&C)<Tab>^Wc
+menutrans Close\ &Other(s)<Tab>^Wo		é™¤æ­¤ä¹‹å¤–å…¨éƒ¨å…³é—­(&O)<Tab>^Wo
+menutrans Move\ &To						ç§»åŠ¨åˆ°(&T)
+menutrans &Top<Tab>^WK					é¡¶ç«¯(&T)<Tab>^WK
+menutrans &Bottom<Tab>^WJ				åº•ç«¯(&B)<Tab>^WJ
+menutrans &Left\ Side<Tab>^WH			å·¦è¾¹(&L)<Tab>^WH
+menutrans &Right\ Side<Tab>^WL			å³è¾¹(&R)<Tab>^WL
+menutrans Rotate\ &Up<Tab>^WR			å‘ä¸Šè½®æ¢(&U)<Tab>^WR
+menutrans Rotate\ &Down<Tab>^Wr			å‘ä¸‹è½®æ¢(&D)<Tab>^Wr
+menutrans &Equal\ Size<Tab>^W=			å¹³å‡åˆ†å¸ƒ(&E)<Tab>^W=
+menutrans &Max\ Height<Tab>^W_			æœ€å¤§é«˜åº¦(&M)<Tab>^W
+menutrans M&in\ Height<Tab>^W1_			æœ€å°é«˜åº¦(&I)<Tab>^W1_
+menutrans Max\ &Width<Tab>^W\|			æœ€å¤§å®½åº¦(&W)<Tab>^W\|
+menutrans Min\ Widt&h<Tab>^W1\|			æœ€å°å®½åº¦(&H)<Tab>^W1\|
 " }}}
 
 " The popup menu {{{1
-menutrans &Undo					³·Ïú(&U)
-menutrans Cu&t					¼ôÇĞ(&T)
-menutrans &Copy					¸´ÖÆ(&C)
-menutrans &Paste				Õ³Ìù(&P)
-menutrans &Delete				É¾³ı(&D)
-menutrans Select\ Blockwise		¸ÄÎªÑ¡¶¨¾ØĞÎ¿é
-menutrans Select\ &Word			Ñ¡¶¨µ¥´Ê(&W)
-menutrans Select\ &Sentence		Ñ¡¶¨¾ä(&S)
-menutrans Select\ Pa&ragraph	Ñ¡¶¨¶ÎÂä(&R)
-menutrans Select\ &Line			Ñ¡¶¨ĞĞ(&L)
-menutrans Select\ &Block		Ñ¡¶¨¾ØĞÎ¿é(&B)
-menutrans Select\ &All			È«Ñ¡(&A)
+menutrans &Undo					æ’¤é”€(&U)
+menutrans Cu&t					å‰ªåˆ‡(&T)
+menutrans &Copy					å¤åˆ¶(&C)
+menutrans &Paste				ç²˜è´´(&P)
+menutrans &Delete				åˆ é™¤(&D)
+menutrans Select\ Blockwise		æ”¹ä¸ºé€‰å®šçŸ©å½¢å—
+menutrans Select\ &Word			é€‰å®šå•è¯(&W)
+menutrans Select\ &Sentence		é€‰å®šå¥(&S)
+menutrans Select\ Pa&ragraph	é€‰å®šæ®µè½(&R)
+menutrans Select\ &Line			é€‰å®šè¡Œ(&L)
+menutrans Select\ &Block		é€‰å®šçŸ©å½¢å—(&B)
+menutrans Select\ &All			å…¨é€‰(&A)
 
 " func! <SID>SpellPopup()
 if !exists("g:menutrans_spell_change_ARG_to")
-  let g:menutrans_spell_change_ARG_to = '½«\ "%s"\ ¸ü¸ÄÎª'
+  let g:menutrans_spell_change_ARG_to = 'å°†\ "%s"\ æ›´æ”¹ä¸º'
 endif
 if !exists("g:menutrans_spell_add_ARG_to_word_list")
-  let g:menutrans_spell_add_ARG_to_word_list = '½«\ "%s"\ Ìí¼Óµ½´Êµä'
+  let g:menutrans_spell_add_ARG_to_word_list = 'å°†\ "%s"\ æ·»åŠ åˆ°è¯å…¸'
 endif
 if !exists("g:menutrans_spell_ignore_ARG")
-  let g:menutrans_spell_ignore_ARG = 'ºöÂÔ\ "%s"'
+  let g:menutrans_spell_ignore_ARG = 'å¿½ç•¥\ "%s"'
 endif
 " }}}
 
@@ -304,145 +304,145 @@ if has("toolbar")
   endif
   fun Do_toolbar_tmenu()
     let did_toolbar_tmenu = 1
-    tmenu ToolBar.Open			´ò¿ªÎÄ¼ş
-    tmenu ToolBar.Save			±£´æµ±Ç°ÎÄ¼ş
-    tmenu ToolBar.SaveAll		È«²¿±£´æ
-    tmenu ToolBar.Print			´òÓ¡
-    tmenu ToolBar.Undo			³·Ïú
-    tmenu ToolBar.Redo			»Ö¸´
-    tmenu ToolBar.Cut			¼ôÇĞµ½¼ôÌù°å
-    tmenu ToolBar.Copy			¸´ÖÆµ½¼ôÌù°å
-    tmenu ToolBar.Paste			´Ó¼ôÌù°åÕ³Ìù
+    tmenu ToolBar.Open			æ‰“å¼€æ–‡ä»¶
+    tmenu ToolBar.Save			ä¿å­˜å½“å‰æ–‡ä»¶
+    tmenu ToolBar.SaveAll		å…¨éƒ¨ä¿å­˜
+    tmenu ToolBar.Print			æ‰“å°
+    tmenu ToolBar.Undo			æ’¤é”€
+    tmenu ToolBar.Redo			æ¢å¤
+    tmenu ToolBar.Cut			å‰ªåˆ‡åˆ°å‰ªè´´æ¿
+    tmenu ToolBar.Copy			å¤åˆ¶åˆ°å‰ªè´´æ¿
+    tmenu ToolBar.Paste			ä»å‰ªè´´æ¿ç²˜è´´
     if !has("gui_athena")
-      tmenu ToolBar.Replace		²éÕÒºÍÌæ»»...
-      tmenu ToolBar.FindNext	²éÕÒÏÂÒ»¸ö
-      tmenu ToolBar.FindPrev	²éÕÒÉÏÒ»¸ö
+      tmenu ToolBar.Replace		æŸ¥æ‰¾å’Œæ›¿æ¢...
+      tmenu ToolBar.FindNext	æŸ¥æ‰¾ä¸‹ä¸€ä¸ª
+      tmenu ToolBar.FindPrev	æŸ¥æ‰¾ä¸Šä¸€ä¸ª
     endif
-    tmenu ToolBar.LoadSesn		¼ÓÔØ»á»°
-    tmenu ToolBar.SaveSesn		±£´æµ±Ç°»á»°
-    tmenu ToolBar.RunScript		ÔËĞĞ Vim ½Å±¾
-    tmenu ToolBar.Make			Éú³Éµ±Ç°ÏîÄ¿ (:make)
-    tmenu ToolBar.RunCtags		ÔÚµ±Ç°Ä¿Â¼Éú³É±ê¼Ç(Tags) (!ctags -R .)
-    tmenu ToolBar.TagJump		Ìø×ªµ½¹â±êËùÔÚ±ê¼Ç(Tag)
-    tmenu ToolBar.Help			Vim °ïÖú
-    tmenu ToolBar.FindHelp		ÔÚ Vim °ïÖúÖĞ²éÕÒ
+    tmenu ToolBar.LoadSesn		åŠ è½½ä¼šè¯
+    tmenu ToolBar.SaveSesn		ä¿å­˜å½“å‰ä¼šè¯
+    tmenu ToolBar.RunScript		è¿è¡Œ Vim è„šæœ¬
+    tmenu ToolBar.Make			ç”Ÿæˆå½“å‰é¡¹ç›® (:make)
+    tmenu ToolBar.RunCtags		åœ¨å½“å‰ç›®å½•ç”Ÿæˆæ ‡è®°(Tags) (!ctags -R .)
+    tmenu ToolBar.TagJump		è·³è½¬åˆ°å…‰æ ‡æ‰€åœ¨æ ‡è®°(Tag)
+    tmenu ToolBar.Help			Vim å¸®åŠ©
+    tmenu ToolBar.FindHelp		åœ¨ Vim å¸®åŠ©ä¸­æŸ¥æ‰¾
   endfun
 endif
 " }}}
 
 " Syntax menu
-menutrans &Syntax	Óï·¨(&S)
+menutrans &Syntax	è¯­æ³•(&S)
 " Syntax menuitems {{{1
-menutrans &Show\ File\ Types\ in\ Menu	ÔÚ²Ëµ¥ÖĞÏÔÊ¾ÎÄ¼şÀàĞÍ(&S)
-menutrans &Off							¹Ø±Õ(&O)
-menutrans &Manual						ÊÖ¶¯(&M)
-menutrans A&utomatic					×Ô¶¯(&U)
-menutrans On/Off\ for\ &This\ File		Ö»¶ÔÕâ¸öÎÄ¼ş¿ª/¹Ø(&T)
-menutrans Co&lor\ Test					É«²Ê²âÊÔ(&L)
-menutrans &Highlight\ Test				¸ßÁÁ²âÊÔ(&H)
-menutrans &Convert\ to\ HTML			×ª»»³É\ HTML(&C)
+menutrans &Show\ File\ Types\ in\ Menu	åœ¨èœå•ä¸­æ˜¾ç¤ºæ–‡ä»¶ç±»å‹(&S)
+menutrans &Off							å…³é—­(&O)
+menutrans &Manual						æ‰‹åŠ¨(&M)
+menutrans A&utomatic					è‡ªåŠ¨(&U)
+menutrans On/Off\ for\ &This\ File		åªå¯¹è¿™ä¸ªæ–‡ä»¶å¼€/å…³(&T)
+menutrans Co&lor\ Test					è‰²å½©æµ‹è¯•(&L)
+menutrans &Highlight\ Test				é«˜äº®æµ‹è¯•(&H)
+menutrans &Convert\ to\ HTML			è½¬æ¢æˆ\ HTML(&C)
 " From synmenu.vim
-menutrans Set\ '&syntax'\ Only			Ö»ÉèÖÃ\ 'syntax'(&S)
-menutrans Set\ '&filetype'\ Too			Ò²ÉèÖÃ\ 'filetype'(&F)
+menutrans Set\ '&syntax'\ Only			åªè®¾ç½®\ 'syntax'(&S)
+menutrans Set\ '&filetype'\ Too			ä¹Ÿè®¾ç½®\ 'filetype'(&F)
 " }}}
 
 " Netrw menu {{{1
 " Plugin loading may be after menu translation
 " So giveup testing if Netrw Plugin is loaded
 " if exists("g:loaded_netrwPlugin")
-  menutrans Help<tab><F1>					°ïÖú<tab><F1>
-  menutrans Bookmarks						ÊéÇ©
-  menutrans History							ÀúÊ·¼ÇÂ¼
-  menutrans Go\ Up\ Directory<tab>-			ÏòÉÏÒ»¼¶<tab>-
-  menutrans Apply\ Special\ Viewer<tab>x	ÓÃÄ¬ÈÏ³ÌĞò´ò¿ª<tab>x
-  menutrans Bookmarks\ and\ History			ÊéÇ©ºÍÀúÊ·¼ÇÂ¼
+  menutrans Help<tab><F1>					å¸®åŠ©<tab><F1>
+  menutrans Bookmarks						ä¹¦ç­¾
+  menutrans History							å†å²è®°å½•
+  menutrans Go\ Up\ Directory<tab>-			å‘ä¸Šä¸€çº§<tab>-
+  menutrans Apply\ Special\ Viewer<tab>x	ç”¨é»˜è®¤ç¨‹åºæ‰“å¼€<tab>x
+  menutrans Bookmarks\ and\ History			ä¹¦ç­¾å’Œå†å²è®°å½•
   " Netrw.Bookmarks and History menuitems {{{2
-  menutrans Bookmark\ Current\ Directory<tab>mb		Ìí¼ÓÊéÇ©<tab>mb
-  menutrans Bookmark\ Delete						ÒÆ³ıÊéÇ©
-  menutrans Goto\ Prev\ Dir\ (History)<tab>u		ºóÍË(ÀúÊ·¼ÇÂ¼)<tab>u
-  menutrans Goto\ Next\ Dir\ (History)<tab>U		Ç°½ø(ÀúÊ·¼ÇÂ¼)<tab>U
-  menutrans List<tab>qb								ÍêÕûÁĞ±í<tab>qb
+  menutrans Bookmark\ Current\ Directory<tab>mb		æ·»åŠ ä¹¦ç­¾<tab>mb
+  menutrans Bookmark\ Delete						ç§»é™¤ä¹¦ç­¾
+  menutrans Goto\ Prev\ Dir\ (History)<tab>u		åé€€(å†å²è®°å½•)<tab>u
+  menutrans Goto\ Next\ Dir\ (History)<tab>U		å‰è¿›(å†å²è®°å½•)<tab>U
+  menutrans List<tab>qb								å®Œæ•´åˆ—è¡¨<tab>qb
   " }}}
-  menutrans Browsing\ Control				¿ØÖÆ
+  menutrans Browsing\ Control				æ§åˆ¶
   " Netrw.Browsing Control menuitems {{{2
-  menutrans Horizontal\ Split<tab>o					ÔÚ²ğ·Ö´°¿Ú´ò¿ª<tab>o
-  menutrans Vertical\ Split<tab>v					ÔÚ´¹Ö±²ğ·Ö´°¿Ú´ò¿ª<tab>v
-  menutrans New\ Tab<tab>t							ÔÚ±êÇ©Ò³´ò¿ª<tab>t	
-  menutrans Preview<tab>p							Ô¤ÀÀ<tab>p
-  menutrans Edit\ File\ Hiding\ List<tab><ctrl-h>	±à¼­Òş²ØÌõ¼ş(Hiding\ List)<tab><ctrl-h>
-  menutrans Edit\ Sorting\ Sequence<tab>S			±à¼­ÅÅĞòÌõ¼ş(Sorting\ Sequence)<tab>S
-  menutrans Quick\ Hide/Unhide\ Dot\ Files<tab>gh	¿ìËÙÒş²Ø/ÏÔÊ¾ÒÔ\.¿ªÍ·µÄÎÄ¼ş<tab>gh
-  menutrans Refresh\ Listing<tab><ctrl-l>			Ë¢ĞÂ<tab><ctrl-l>
-  menutrans Settings/Options<tab>:NetrwSettings		ÉèÖÃ/Ñ¡Ïî<tab>:NetrwSettings
+  menutrans Horizontal\ Split<tab>o					åœ¨æ‹†åˆ†çª—å£æ‰“å¼€<tab>o
+  menutrans Vertical\ Split<tab>v					åœ¨å‚ç›´æ‹†åˆ†çª—å£æ‰“å¼€<tab>v
+  menutrans New\ Tab<tab>t							åœ¨æ ‡ç­¾é¡µæ‰“å¼€<tab>t	
+  menutrans Preview<tab>p							é¢„è§ˆ<tab>p
+  menutrans Edit\ File\ Hiding\ List<tab><ctrl-h>	ç¼–è¾‘éšè—æ¡ä»¶(Hiding\ List)<tab><ctrl-h>
+  menutrans Edit\ Sorting\ Sequence<tab>S			ç¼–è¾‘æ’åºæ¡ä»¶(Sorting\ Sequence)<tab>S
+  menutrans Quick\ Hide/Unhide\ Dot\ Files<tab>gh	å¿«é€Ÿéšè—/æ˜¾ç¤ºä»¥\.å¼€å¤´çš„æ–‡ä»¶<tab>gh
+  menutrans Refresh\ Listing<tab><ctrl-l>			åˆ·æ–°<tab><ctrl-l>
+  menutrans Settings/Options<tab>:NetrwSettings		è®¾ç½®/é€‰é¡¹<tab>:NetrwSettings
   " }}}
-  menutrans Delete\ File/Directory<tab>D	É¾³ıÎÄ¼ş/Ä¿Â¼<tab>D
-  menutrans Edit\ File/Dir					±à¼­ÎÄ¼ş/Ä¿Â¼
+  menutrans Delete\ File/Directory<tab>D	åˆ é™¤æ–‡ä»¶/ç›®å½•<tab>D
+  menutrans Edit\ File/Dir					ç¼–è¾‘æ–‡ä»¶/ç›®å½•
   " Netrw.Edit File menuitems {{{2
-  menutrans Create\ New\ File<tab>%				ĞÂ½¨ÎÄ¼ş<tab>%
-  menutrans In\ Current\ Window<tab><cr>		ÔÚµ±Ç°´°¿Ú<tab><cr>
-  menutrans Preview\ File/Directory<tab>p		Ô¤ÀÀÎÄ¼ş/Ä¿Â¼<tab>p
-  menutrans In\ Previous\ Window<tab>P			ÔÚÉÏÒ»¸ö´°¿Ú<tab>P
-  menutrans In\ New\ Window<tab>o				ÔÚĞÂ´°¿Ú<tab>o
-  menutrans In\ New\ Tab<tab>t					ÔÚĞÂ±êÇ©Ò³<tab>t
-  menutrans In\ New\ Vertical\ Window<tab>v		ÔÚĞÂ´¹Ö±´°¿Ú<tab>v
+  menutrans Create\ New\ File<tab>%				æ–°å»ºæ–‡ä»¶<tab>%
+  menutrans In\ Current\ Window<tab><cr>		åœ¨å½“å‰çª—å£<tab><cr>
+  menutrans Preview\ File/Directory<tab>p		é¢„è§ˆæ–‡ä»¶/ç›®å½•<tab>p
+  menutrans In\ Previous\ Window<tab>P			åœ¨ä¸Šä¸€ä¸ªçª—å£<tab>P
+  menutrans In\ New\ Window<tab>o				åœ¨æ–°çª—å£<tab>o
+  menutrans In\ New\ Tab<tab>t					åœ¨æ–°æ ‡ç­¾é¡µ<tab>t
+  menutrans In\ New\ Vertical\ Window<tab>v		åœ¨æ–°å‚ç›´çª—å£<tab>v
   " }}}
-  menutrans Explore							ä¯ÀÀ
+  menutrans Explore							æµè§ˆ
   " Netrw.Explore menuitems {{{2
-  menutrans Directory\ Name															Ö¸¶¨Ä¿Â¼Ãû
-  menutrans Filenames\ Matching\ Pattern\ (curdir\ only)<tab>:Explore\ */			Æ¥ÅäÖ¸¶¨ÎÄ¼şÃûÄ£Ê½(µ±Ç°Ä¿Â¼)<tab>:Explore\ */
-  menutrans Filenames\ Matching\ Pattern\ (+subdirs)<tab>:Explore\ **/				Æ¥ÅäÖ¸¶¨ÎÄ¼şÃûÄ£Ê½(º¬×ÓÄ¿Â¼)<tab>:Explore\ **/
-  menutrans Files\ Containing\ String\ Pattern\ (curdir\ only)<tab>:Explore\ *//	ÄÚÈİ°üº¬Ö¸¶¨×Ö·û´®Ä£Ê½(µ±Ç°Ä¿Â¼)<tab>:Explore\ *//
-  menutrans Files\ Containing\ String\ Pattern\ (+subdirs)<tab>:Explore\ **//		ÄÚÈİ°üº¬Ö¸¶¨×Ö·û´®Ä£Ê½(º¬×ÓÄ¿Â¼)<tab>:Explore\ **//
-  menutrans Next\ Match<tab>:Nexplore												ÏÂÒ»¸öÆ¥ÅäÏî<tab>:Nexplore
-  menutrans Prev\ Match<tab>:Pexplore												ÉÏÒ»¸öÆ¥ÅäÏî<tab>:Pexplore
+  menutrans Directory\ Name															æŒ‡å®šç›®å½•å
+  menutrans Filenames\ Matching\ Pattern\ (curdir\ only)<tab>:Explore\ */			åŒ¹é…æŒ‡å®šæ–‡ä»¶åæ¨¡å¼(å½“å‰ç›®å½•)<tab>:Explore\ */
+  menutrans Filenames\ Matching\ Pattern\ (+subdirs)<tab>:Explore\ **/				åŒ¹é…æŒ‡å®šæ–‡ä»¶åæ¨¡å¼(å«å­ç›®å½•)<tab>:Explore\ **/
+  menutrans Files\ Containing\ String\ Pattern\ (curdir\ only)<tab>:Explore\ *//	å†…å®¹åŒ…å«æŒ‡å®šå­—ç¬¦ä¸²æ¨¡å¼(å½“å‰ç›®å½•)<tab>:Explore\ *//
+  menutrans Files\ Containing\ String\ Pattern\ (+subdirs)<tab>:Explore\ **//		å†…å®¹åŒ…å«æŒ‡å®šå­—ç¬¦ä¸²æ¨¡å¼(å«å­ç›®å½•)<tab>:Explore\ **//
+  menutrans Next\ Match<tab>:Nexplore												ä¸‹ä¸€ä¸ªåŒ¹é…é¡¹<tab>:Nexplore
+  menutrans Prev\ Match<tab>:Pexplore												ä¸Šä¸€ä¸ªåŒ¹é…é¡¹<tab>:Pexplore
   " }}}
-  menutrans Make\ Subdirectory<tab>d		ĞÂ½¨×ÓÄ¿Â¼<tab>d
-  menutrans Marked\ Files					Ñ¡¶¨µÄ(Marked)ÎÄ¼ş
+  menutrans Make\ Subdirectory<tab>d		æ–°å»ºå­ç›®å½•<tab>d
+  menutrans Marked\ Files					é€‰å®šçš„(Marked)æ–‡ä»¶
   " Netrw.Marked Files menuitems {{{2
-  menutrans Mark\ File<tab>mf						Ñ¡¶¨(Mark)/È¡Ïû<tab>mf
-  menutrans Mark\ Files\ by\ Regexp<tab>mr			ÓÃÕıÔò±í´ïÊ½(Regexp)Ñ¡¶¨<tab>mr
-  menutrans Hide-Show-List\ Control<tab>a			Òş²Ø/ÏÔÊ¾<tab>a
-  menutrans Copy\ To\ Target<tab>mc					¸´ÖÆµ½Ä¿±ê<tab>mc
-  menutrans Delete<tab>D							É¾³ı<tab>D
-  menutrans Diff<tab>md								²îÒì(Diff)<tab>md
-  menutrans Edit<tab>me								±à¼­<tab>me
-  menutrans Exe\ Cmd<tab>mx							×÷Îª²ÎÊıÔËĞĞÃüÁî<tab>mx
-  menutrans Move\ To\ Target<tab>mm					ÒÆ¶¯µ½Ä¿±ê<tab>mm
-  menutrans Obtain<tab>O							»ñÈ¡<tab>O
-  menutrans Print<tab>mp							´òÓ¡<tab>mp
-  menutrans Replace<tab>R							Ìæ»»<tab>R
-  menutrans Set\ Target<tab>mt						ÉèÖÃÄ¿±ê<tab>mt
-  menutrans Tag<tab>mT								Éú³É±ê¼ÇÎÄ¼ş(Tags)<tab>mT
-  menutrans Zip/Unzip/Compress/Uncompress<tab>mz	Ñ¹Ëõ/½âÑ¹Ëõ<tab>mz
+  menutrans Mark\ File<tab>mf						é€‰å®š(Mark)/å–æ¶ˆ<tab>mf
+  menutrans Mark\ Files\ by\ Regexp<tab>mr			ç”¨æ­£åˆ™è¡¨è¾¾å¼(Regexp)é€‰å®š<tab>mr
+  menutrans Hide-Show-List\ Control<tab>a			éšè—/æ˜¾ç¤º<tab>a
+  menutrans Copy\ To\ Target<tab>mc					å¤åˆ¶åˆ°ç›®æ ‡<tab>mc
+  menutrans Delete<tab>D							åˆ é™¤<tab>D
+  menutrans Diff<tab>md								å·®å¼‚(Diff)<tab>md
+  menutrans Edit<tab>me								ç¼–è¾‘<tab>me
+  menutrans Exe\ Cmd<tab>mx							ä½œä¸ºå‚æ•°è¿è¡Œå‘½ä»¤<tab>mx
+  menutrans Move\ To\ Target<tab>mm					ç§»åŠ¨åˆ°ç›®æ ‡<tab>mm
+  menutrans Obtain<tab>O							è·å–<tab>O
+  menutrans Print<tab>mp							æ‰“å°<tab>mp
+  menutrans Replace<tab>R							æ›¿æ¢<tab>R
+  menutrans Set\ Target<tab>mt						è®¾ç½®ç›®æ ‡<tab>mt
+  menutrans Tag<tab>mT								ç”Ÿæˆæ ‡è®°æ–‡ä»¶(Tags)<tab>mT
+  menutrans Zip/Unzip/Compress/Uncompress<tab>mz	å‹ç¼©/è§£å‹ç¼©<tab>mz
   " }}}
-  menutrans Obtain\ File<tab>O				»ñÈ¡ÎÄ¼ş<tab>O
-  menutrans Style							ÏÔÊ¾·ç¸ñ
+  menutrans Obtain\ File<tab>O				è·å–æ–‡ä»¶<tab>O
+  menutrans Style							æ˜¾ç¤ºé£æ ¼
   " Netrw.Style menuitems {{{2
-  menutrans Listing							ÁĞ±íĞÎÊ½
+  menutrans Listing							åˆ—è¡¨å½¢å¼
   " Netrw.Style.Listing menuitems {{{3
-  menutrans thin<tab>i	½ô´Õ<thin)<tab>i
-  menutrans long<tab>i	ÏêÏ¸(long)<tab>i
-  menutrans wide<tab>i	¶àÁĞ(wide)<tab>i
-  menutrans tree<tab>i	Ê÷×´(tree)<tab>i
+  menutrans thin<tab>i	ç´§å‡‘<thin)<tab>i
+  menutrans long<tab>i	è¯¦ç»†(long)<tab>i
+  menutrans wide<tab>i	å¤šåˆ—(wide)<tab>i
+  menutrans tree<tab>i	æ ‘çŠ¶(tree)<tab>i
   " }}}
-  menutrans Normal-Hide-Show				ÏÔÊ¾/Òş²Ø
+  menutrans Normal-Hide-Show				æ˜¾ç¤º/éšè—
   " Netrw.Style.Normal-Hide_show menuitems {{{3
-  menutrans Show\ All<tab>a		ÏÔÊ¾È«²¿
-  menutrans Normal<tab>a		²»ÏÔÊ¾Òş²ØÎÄ¼ş
-  menutrans Hidden\ Only<tab>a	Ö»ÏÔÊ¾Òş²ØÎÄ¼ş
+  menutrans Show\ All<tab>a		æ˜¾ç¤ºå…¨éƒ¨
+  menutrans Normal<tab>a		ä¸æ˜¾ç¤ºéšè—æ–‡ä»¶
+  menutrans Hidden\ Only<tab>a	åªæ˜¾ç¤ºéšè—æ–‡ä»¶
   " }}}
-  menutrans Reverse\ Sorting\ Order<tab>r	ÉıĞò/½µĞò<tab>r
-  menutrans Sorting\ Method					ÅÅĞò·½Ê½
+  menutrans Reverse\ Sorting\ Order<tab>r	å‡åº/é™åº<tab>r
+  menutrans Sorting\ Method					æ’åºæ–¹å¼
   " Netrw.Style.Sorting Method menuitems {{{3
-  menutrans Name<tab>s		ÎÄ¼şÃû<tab>s
-  menutrans Time<tab>s  	ĞŞ¸ÄÊ±¼ä<tab>s
-  menutrans Size<tab>s  	´óĞ¡<tab>s
-  menutrans Exten<tab>s		À©Õ¹Ãû<tab>s
+  menutrans Name<tab>s		æ–‡ä»¶å<tab>s
+  menutrans Time<tab>s  	ä¿®æ”¹æ—¶é—´<tab>s
+  menutrans Size<tab>s  	å¤§å°<tab>s
+  menutrans Exten<tab>s		æ‰©å±•å<tab>s
   " }}}
   " }}}
-  menutrans Rename\ File/Directory<tab>R	ÖØÃüÃûÎÄ¼ş/Ä¿Â¼<tab>R
-  menutrans Set\ Current\ Directory<tab>c	ÉèÖÃ\ Vim\ ¹¤×÷Ä¿Â¼<tab>c
-  menutrans Targets							Ä¿±ê
+  menutrans Rename\ File/Directory<tab>R	é‡å‘½åæ–‡ä»¶/ç›®å½•<tab>R
+  menutrans Set\ Current\ Directory<tab>c	è®¾ç½®\ Vim\ å·¥ä½œç›®å½•<tab>c
+  menutrans Targets							ç›®æ ‡
 " endif
 " }}}
 
